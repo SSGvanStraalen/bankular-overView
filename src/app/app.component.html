@@ -1,0 +1,43 @@
+<mat-toolbar  color="primary">  
+  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>Item 1</button>
+    <button mat-menu-item>Item 2</button>
+  </mat-menu>
+</mat-toolbar>
+
+<main>
+  <h1>Account overview:</h1>
+  <hr/>
+  <mat-card >
+      <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <div style="float:right;">Balance: €500,89</div>
+      <mat-card-title >Primary account </mat-card-title>
+    <mat-card-subtitle>NL05BANKA9569638105</mat-card-subtitle>
+   </mat-card-header>
+   <mat-card-actions>
+      <button mat-button>Transactions</button>
+      <button mat-button>New Transaction</button>
+    </mat-card-actions>
+  </mat-card>
+  <mat-card >
+      <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title >Primary account <span style="float:right;">Balance: €500,89</span></mat-card-title>
+    <mat-card-subtitle>NL05BANKA9569638105</mat-card-subtitle>
+   </mat-card-header>
+   <mat-card-actions>
+      <button mat-button>Transactions</button>
+      <button mat-button>New Transaction</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <hr style="margin-top: 16px;"/>
+  <div>
+    <h2 style="float:right; margin-right: 16px; margin-top: 0px;padding-top:0px;">Total amound: €2323,66</h2>
+  </div>
+
+  
+</main>
+
