@@ -4,10 +4,13 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatMenuModule, MatToolbarModule, MatCardModule} from '@angular/material';
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { TransferComponent } from './transfer/transfer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TransferComponent
   ],
   imports: [
     BrowserModule,
@@ -15,7 +18,8 @@ import { AppComponent } from './app.component';
     MatButtonModule, 
     MatMenuModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
